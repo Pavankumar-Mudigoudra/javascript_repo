@@ -25,7 +25,7 @@ let myObj = {
     age : 22,
 }
 
-console.log(typeof heros);
+//console.log(typeof heros);
 
 // in js we can store a function in a variable
 
@@ -33,4 +33,32 @@ const myFunction = function(){
     console.log("Hello There..!");
 }
 
-console.log(myFunction());
+//console.log(myFunction());
+
+// *****************************************
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+// example for Stack (Primitive) memory and changes
+
+// stack will always give us a copy of the data
+let myName = "PavankumarMudigoudra";
+
+let anotherName = myName;
+anotherName = "Tejas"
+
+console.log(myName);
+console.log(anotherName);
+
+// example for Heap (non - primitive) memory and changes
+
+let userOne = {
+    email: "user1@gmail.com",
+    upiId : "user1@axis"
+}
+
+let userTwo = userOne;
+userTwo.email = "user2@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
